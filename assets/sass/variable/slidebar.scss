@@ -1,0 +1,202 @@
+
+/* Sidebar Modal */
+.sidebar-modal {
+    position: relative;
+    .navbar-nav {
+        li {
+            a {
+                padding: 10px 0px 10px 15px;
+            }
+        }
+    }
+    .modal.right {
+        .modal-dialog {
+            position: fixed;
+            margin: auto;
+            width: 450px;
+            height: 100%;
+            transform: translate3d(0%, 0, 0);
+        }
+        .modal-content {
+            height: 100%;
+            overflow-y: auto;
+            border-radius: 0;
+            border: none;
+            background-color: $color-white;
+        }
+        .modal-body {
+            padding: 30px;
+            .sidebar-modal-widget {
+                margin-bottom: 35px;
+                .title {
+                    position: relative;
+                    z-index: 1;
+                    margin-bottom: 35px;
+                    color: $title-color;
+                    border-bottom: 1px solid #eeeeee;
+                    padding-bottom: 5px;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: -1px;
+                        width: 70px;
+                        height: 2px;
+                        border-radius: 5px;
+                        background: $color-blue;
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        margin-bottom: 10px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        a {
+                            font-size: 16px;
+                            color: $paragraph-color;
+                            font-weight: 600;
+                            text-transform: capitalize;
+                            &:hover {
+                                color: $main-color;
+                            }
+                        }
+                    }
+                }
+                .contact-info {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        position: relative;
+                        font-weight: 500;
+                        padding-left: 45px;
+                        text-transform: uppercase;
+                        margin-bottom: 10px;
+                        font-size: 16px;
+                        color: $paragraph-color;
+                        span {
+                            font-size: 16px;
+                            display: block;
+                            font-weight: 400;
+                            color: $title-color;
+                            margin-top: 5px;
+                            text-transform: initial;
+
+                        }
+                        i {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            color: $color-white;
+                            text-align: center;
+                            width: 35px;
+                            height: 35px;
+                            line-height: 35px;
+                            font-size: 29px;
+                            -webkit-transition: all 0.5s;
+                            transition: all 0.5s;
+                            background-color: $color-blue;
+                            border-radius: 4px;
+                            font-size: 15px;
+                        }
+                        &:hover i {
+                            color: #ffffff;
+                            background: $main-color;
+                        }
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                .social-list {
+                    text-align: left;
+                    li {
+                        display: inline-block;
+                        padding-right: 5px;
+                        a {
+                            i {
+                                width: 25px;
+                                height: 25px;
+                                display: inline-block;
+                                text-align: center;
+                                line-height: 25px;
+                                border-radius: 4px;
+                                color: #ffffff;
+                                background-color: $paragraph-color;
+                                font-size: 12px;
+                                -webkit-transition: all 0.5s;
+                                transition: all 0.5s;
+                                &:hover {
+                                    background-color: $main-color;
+                                }
+                            }
+                            &:hover {
+                                color: $main-color;
+                            }
+                        }
+                        &:hover {
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .modal.right.fade.show {
+        .modal-dialog {
+            right: 0;
+            -webkit-animation: fadeInRight 0.6s linear;
+                    animation: fadeInRight 0.6s linear;
+        }
+    }
+    .modal-header {
+        display: inline;
+        padding: 0;
+        border: none;
+        .close {
+            height: 110px;
+            width: 60px;
+            color: $paragraph-color;
+            margin: 0px;
+            padding: 0px;
+            cursor: pointer;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            border: none;
+            opacity: 1;
+            position: absolute;
+            top: 0;
+            right: 0;
+            i {
+                margin-left: 0;
+                font-size: 40px;
+            }
+        }
+        h2 {
+            background-color: $color-white;
+            -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+                    box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+            padding: 30px 25px;
+        }
+    }
+    button {
+        &:focus {
+            outline: 0px;
+        }
+    }
+}
+.sidebar-modal .modal.right.fade.show .modal-dialog {
+    right: 0;
+    -webkit-animation: fadeInRight 0.6s linear;
+    animation: fadeInRight 0.6s linear;
+}
+.sidebar-modal .modal.right.fade .modal-dialog {
+        right: 0;
+}

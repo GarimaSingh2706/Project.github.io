@@ -1,0 +1,143 @@
+
+.bg-price {
+    background-color: #fcfcff;
+}
+.tabs-item-list {
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        margin:auto;
+        li {
+            display: inline-block;
+            &.active {
+                a {
+                    background-color: $color-blue;
+                    color: $color-white;
+                }
+            }
+            a {
+                color: $color-blue;
+                display: inline-block;
+                color: $color-white;
+                margin-right: 20px;
+                text-align: center;
+                background-color: #eff1ff;
+                padding: 10px 50px;
+                border-radius: 50px;
+                color: $color-blue;
+                &.active {
+                    background-color: $color-blue;
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+#prices-content {
+    margin-top: 50px;
+    .prices-content-area {
+        display: none;
+    }
+      .active {
+        display: block;
+    }
+}
+
+.single-price {
+    padding-top: 38px ;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: $color-white;
+    box-shadow: 0 0 15px rgba(146, 145, 145, 0.1);
+    border-radius: 15px;
+    transition: 0.7s;
+    margin-bottom: 30px;
+    &:hover {
+        background-color: $color-blue;
+    }
+    &:hover .get-btn  {
+        background-color: $color-white;
+        color: $main-color;
+    }
+    &:hover ul li, &:hover .single-price-title  h2 {
+        color: $color-white;
+    }
+    &:hover ul .color-gray {
+        color: #6578f7;
+    }
+    &.current {
+        background-color: $color-blue;
+    }
+    &.current .get-btn  {
+        background-color: $color-white;
+        color: $main-color;
+    }
+    &.current ul li, &.current .single-price-title  h2{
+        color: $color-white;
+    }
+    &.current ul .color-gray {
+        color: #6578f7;
+    }
+    &.current .get-btn  {
+        background-color: $color-white;
+        color: $main-color;
+    }
+    span {
+        color: $main-color;
+        background-color: #fffbfb;
+        padding: 10px 20px;
+        border-radius: 50px;
+    }
+    .single-price-title {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        h2 {
+            font-size: 40px;
+            color: $color-blue;
+            font-weight: 700;
+            sup {
+                font-size: 22px;
+                line-height: 0;
+                margin-right: 5px;
+            }
+            sub {
+                font-size: 22px;
+                font-weight: 500;
+            }
+        }
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            color: #444444;
+            display: block;
+            margin-top: 10px;
+            &.color-gray {
+                color: #cbcbcb;
+            }
+        }
+    }
+    .get-btn {
+        margin-top: 30px;
+        background-color: $color-blue;
+        text-align: center;
+        padding: 10px 40px;
+        color: $color-white;
+        border-radius: 50px;
+        transition: 0.7s;
+        &:hover {
+            background-color: $title-color;
+            color: $color-white;
+        }
+    }
+}
+
+
+.price-shape {
+    background-image: url(../img/shape/price-shape.png);
+    background-position: center center;
+    background-size: cover;
+}

@@ -1,0 +1,33 @@
+/*=================================
+Brand Area
+====================================*/
+.brand-area {
+    position: relative;
+}
+.brand-bg {
+    background-color: #f9f9f9;
+}
+.brand-title {
+    margin-bottom: 50px;
+    span {
+        color: $main-color;
+        font-weight: 500;
+        line-height: 0;
+    }
+    h2 {
+        font-size: 35px;
+    }
+}
+.brand-item {
+    text-align: center;
+    line-height: 1;
+    a {
+        img {
+            max-width: unset;
+            opacity: 0.8;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}

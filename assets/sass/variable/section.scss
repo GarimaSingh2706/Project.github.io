@@ -1,0 +1,82 @@
+/*================================
+Section Title Style
+===================================*/
+.section-title {
+    span {
+        color: $main-color;
+        font-weight: 500;
+        line-height: 0.8;
+    }
+    h2 {
+        font-size: 35px;
+        max-width: 510px;
+        margin: auto;
+    }
+    p {
+        padding-top: 25px;
+        max-width: 620px;
+        margin: 0 auto;
+    }
+}
+
+.navbar-area {
+    background-color: transparent;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    position: relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-light {
+    padding-left: 0;
+    padding-right: 0;
+    .navbar-brand {
+        img{
+            float: left;
+        }
+    }
+    .navbar-brand-sticky {
+        display: none;
+    }
+}
+.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin: auto;
+    z-index: 999;
+    background-color: $color-blue !important;
+    animation: 900ms ease-in-out 5s normal none 1 running fadeInDown;
+    transition: 0.9s;
+    width: 100% !important;
+    .main-nav {
+        background-color: $title-color;
+        nav {
+            .navbar-nav {
+                .nav-item {
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .menu-btn {
+        .seo-btn {
+            background-color: $color-blue;
+        }
+    }
+    .navbar-light {
+        .navbar-brand {
+            display: none;
+        }
+        .navbar-brand-sticky {
+            display: inline-block;
+        }
+    }
+}

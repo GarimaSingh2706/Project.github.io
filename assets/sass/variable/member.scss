@@ -1,0 +1,105 @@
+.member-area {
+    position: relative;
+}
+.member-card {
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    &:hover .member-img .member-content {
+        padding-top: 40px;
+    }
+    &:hover .member-img .member-content .social-icon {
+        opacity: 1;
+    }
+    .member-img {
+        position: relative;
+        a {
+            display: block;
+            img {
+                max-width: 100%;
+                border-radius: 10px 10px 0 0;
+                width: 100%;
+            }
+        }
+        .member-content {
+            position: absolute;
+            bottom: 0;
+            padding-top: 20px;
+            padding-bottom: 15px;
+            text-align: center;
+            background-color: $color-white;
+            border-radius:15px 15px 0 0;
+            width: 100%;
+            transition: 0.7s;
+            a {
+                h3 {
+                    font-size: 20px;
+                    line-height: 0.7;
+                    color: $title-color;
+                }
+            }
+            span {
+                font-size: 14px;
+                line-height: 0;
+                color: #707070;
+            }
+            .social-icon {
+                opacity: 0;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 85px;
+                transition: 0.7s;
+                &.active {
+                    opacity: 1;
+                }
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        margin-right: 5px;
+                        border-radius: 50px;
+                        text-align: center;
+                        background-color: $color-white;
+                        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+                        transition: 0.7s;
+                        a {
+                            color: $color-blue;
+                            font-size: 20px;
+                            &:hover {
+                                color: $color-white;
+                            }
+                        }
+                        &:hover {
+                            background-color: $color-blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.member-shape {
+    position: absolute;
+    top:-300px;
+    left: 0;
+    z-index: -1;
+    img {
+        height: 900px;
+        max-width: 845px;
+    }
+}
+.member-shape-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    img {
+        max-width: 950px;
+        height: 1730px;
+    }
+}

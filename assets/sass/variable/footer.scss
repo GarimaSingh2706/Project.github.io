@@ -1,0 +1,270 @@
+.footer-area-another {
+    background-color: $color-white;
+}
+.footer-top-2 {
+    position: relative;
+    z-index: 1;
+}
+.footer-single-2 {
+    margin-bottom: 30px;
+    .footer-single-content-2 {
+        a {
+            img {
+                margin-bottom: 20px;
+            }
+        }
+        p {
+            color: $paragraph-color;
+            margin-bottom: 20px;
+        }
+    }
+    .footer-social {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+            display: inline-block;
+            position: relative;
+            padding-right: 10px;
+            a {
+                font-size: 24px;
+                color: $title-color;
+                &:hover {
+                    color: $color-blue;
+                }
+            }
+        }
+    }
+}
+
+.footer-list-2 {
+    margin-bottom: 30px;
+    h3 {
+        font-size: 25px;
+        color: $title-color;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            margin-top: 10px;
+            display: block;
+            font-size: 17px;
+            color: $title-color;
+            i {
+                font-size: 15px;
+            }
+            a {
+                color: $title-color;
+                position: relative;
+                transition: 0.7s;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 1px;
+                    background-color: $color-blue;
+                    transition: 0.7s;
+                }
+                &:hover::before {
+                    width: 100%;
+                }
+                &:hover {
+                    color: $color-blue;
+                }
+            }
+        }
+    }
+}
+
+.footer-bottom-2 {
+    position: relative;
+    border-top: 1px solid $color-white;
+    padding-top: 24px;
+    padding-bottom: 22px;
+    z-index: 1;
+    background-color: $title-color;
+    .bottom-text-2 {
+        p {
+            color: $color-white;
+            padding: 0;
+            margin: 0;
+            a {
+                color: $main-color;
+                font-weight: 500;
+                &:hover {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+.bg-footer {
+    margin-top: 20px;
+    background-color: $color-blue;
+    position: relative;
+    border-radius: 40% 0 0 0;
+    &::before {
+        content: "";
+        left: 0;
+        position: absolute;
+        background: #ffffff;
+        height: 20%;
+        top: -70px;
+        transform: skewY(175deg);
+        width: 100%;
+        z-index: 1;
+    }
+    &::after {
+        content: '';
+        position: relative;
+        top: 0;
+        right: 0;
+        background-image: url(../img/shape/footer-shape.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        width: 100%;
+        height: 100%;
+    }
+}
+.footer-top {
+    padding-top: 200px;
+    padding-bottom: 70px;
+    position: relative;
+    z-index: 1;
+}
+.footer-single {
+    margin-bottom: 30px;
+    .footer-single-content {
+        a {
+            img {
+                margin-bottom: 20px;
+            }
+        }
+        p {
+            color: $color-white;
+            margin: 0;
+        }
+    }
+    .newsletter-area {
+        margin-top: 25px;
+        .newsletter-form {
+            position: relative;
+            max-width: 370px;
+            border-radius: 50px;
+            .form-control {
+                background: $color-white;
+                height: 55px;
+                line-height: 55px;
+                margin: 0;
+                border-radius: 50px;
+                border: none;
+                padding: 0 25px;
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
+                    border: none;
+                }
+            }
+            .subscribe-btn {
+                position: absolute;
+                top: 8px;
+                right: 10px;
+                margin: 0;
+                background: $color-blue;
+                color: $color-white;
+                height: 40px;
+                line-height: 40px;
+                padding: 0 20px;
+                border: 0;
+                border-radius: 50px;
+                font-size: 14px;
+                &:hover {
+                    background: $title-color;
+                    color: #ffffff;
+                }
+            }
+            .validation-danger {
+                font-size: 18px;
+                margin-top: 5px;
+                color: red;
+            }
+        }
+    }
+}
+
+.footer-list {
+    margin-bottom: 30px;
+    h3 {
+        font-size: 25px;
+        color: $color-white;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            margin-top: 10px;
+            display: block;
+            font-size: 17px;
+            color: $color-white;
+            i {
+                font-size: 15px;
+            }
+            a {
+                color: $color-white;
+                position: relative;
+                transition: 0.7s;
+                &::before {
+                    content: '';
+                    position: relative;
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    height: 1px;
+                    background-color: $title-color;
+                    transition: 0.7s;
+                }
+                &:hover::before {
+                    width: 100%;
+                }
+                &:hover {
+                    color: $title-color;
+                }
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    position: relative;
+    border-top: 1px solid $color-white;
+    padding-top: 24px;
+    padding-bottom: 22px;
+    z-index: 1;
+    .bottom-text {
+        p {
+            color: $color-white;
+            padding: 0;
+            margin: 0;
+            a {
+                color: $title-color;
+                font-weight: 500;
+                &:hover {
+                    color: $color-white;
+                }
+            }
+        }
+    }
+}
+
+.footer-area-bg {
+    background-color: $color-blue;
+}

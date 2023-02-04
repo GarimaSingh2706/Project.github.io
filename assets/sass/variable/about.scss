@@ -1,0 +1,88 @@
+.about-area {
+    position: relative;
+}
+.about-img {
+    margin-bottom: 30px;
+}
+.about-content {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    &.about-width {
+        max-width: 620px;
+        margin-right: auto;
+    }
+    span {
+        color: $main-color;
+        font-weight: 500;
+        line-height: 0;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    p {
+        margin-top: 20px;
+    }
+    .about-btn {
+        margin-top: 31px;
+    }
+}
+.about-shape {
+    position: absolute;
+    top: -100px;
+    right: 0;
+    z-index: -1;
+    img {
+        max-width: 130px;
+        height: 780px;
+    }
+}
+.about-shape-2 {
+    position: absolute;
+    top: 400px;
+    right: 0;
+    z-index: -1;
+}
+
+.about-img-2 {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    max-width: 500px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+    .about-man {
+        text-align: center;
+        position: relative;
+        img {
+            height: 570px;
+            margin-top: -80px;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/about/bg-shape.png);
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 500px;
+            height: 500px;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: -1;
+        }
+    }
+    .about-shape1 {
+        position: absolute;
+        left: -40px;
+        top: 35%;
+        animation: moveBounce 9s linear infinite;
+    }
+    .about-shape2 {
+        position: absolute;
+        right: -10px;
+        top: 55%;
+        animation: moveBounce 12s linear infinite;
+    }
+}
